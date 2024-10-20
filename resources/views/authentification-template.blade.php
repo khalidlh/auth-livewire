@@ -80,6 +80,7 @@
             /* Jaune pour le mot de passe oublié */
         }
     </style>
+    @livewireStyles
 </head>
 
 <body>
@@ -96,6 +97,7 @@
             </div>
         </div>
     </div>
+    @livewireScripts
     @vite('resources/js/app.js')
 
 </body>
