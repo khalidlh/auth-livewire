@@ -53,6 +53,9 @@ Route::get('/cv', function () {
 Route::get('/payment', function () {
     return view('payment.index');
 })->name('payment');
+Route::get('/success', function () {
+    return view('payment.paypale.success');
+})->name('payment');
 //payment with paypal
 Route::get('create-payment', [PaypalController::class, 'createPayment'])->name('create.payment');
 Route::get('paypal-success', [PaypalController::class, 'paymentSuccess'])->name('paypal.success');
@@ -61,3 +64,9 @@ Route::get('paypal-cancel', [PaypalController::class, 'paymentCancel'])->name('p
 Route::get('/stripe/checkout', [StripeController::class, 'checkout'])->name('stripe.checkout');
 Route::get('/stripe/success', [StripeController::class, 'success'])->name('stripe.success');
 Route::get('/stripe/cancel', [StripeController::class, 'cancel'])->name('stripe.cancel');
+
+//multisteps form
+
+Route::get('/form/multisteps', function () {
+    return view('forms.multisteps');
+})->name('form.multisteps');

@@ -66,6 +66,21 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Section Multi-Step Form -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="{{ asset('build/assets/images/multisteps.png') }}" class="card-img-top img-fluid"
+                        alt="Multi-Step Form" style="height: 200px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h2>Multi-Step Form</h2>
+                        <p>Complete the form step by step.</p>
+                        <a href="{{ route('form.multisteps') }}" class="btn btn-info">
+                            <i class="fas fa-clipboard-list"></i> Start Form
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
